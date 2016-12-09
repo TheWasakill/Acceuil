@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_Musique = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_Film = new System.Windows.Forms.Button();
+            this.btn_Anime = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Musique
@@ -39,7 +39,9 @@
             this.btn_Musique.BackColor = System.Drawing.Color.Black;
             this.btn_Musique.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Musique.BackgroundImage")));
             this.btn_Musique.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Musique.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Musique.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Musique.Font = new System.Drawing.Font("Carnivalee Freakshow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Musique.ForeColor = System.Drawing.Color.White;
             this.btn_Musique.Location = new System.Drawing.Point(141, 12);
             this.btn_Musique.Name = "btn_Musique";
             this.btn_Musique.Size = new System.Drawing.Size(86, 34);
@@ -47,23 +49,32 @@
             this.btn_Musique.Text = "Musiques";
             this.btn_Musique.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_Film
             // 
-            this.button2.Location = new System.Drawing.Point(141, 63);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 34);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Film.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Film.BackgroundImage")));
+            this.btn_Film.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Film.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Film.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Film.ForeColor = System.Drawing.Color.Gray;
+            this.btn_Film.Location = new System.Drawing.Point(141, 63);
+            this.btn_Film.Name = "btn_Film";
+            this.btn_Film.Size = new System.Drawing.Size(86, 34);
+            this.btn_Film.TabIndex = 1;
+            this.btn_Film.Text = "Films";
+            this.btn_Film.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_Anime
             // 
-            this.button3.Location = new System.Drawing.Point(141, 115);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 34);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Anime.BackColor = System.Drawing.Color.Plum;
+            this.btn_Anime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Anime.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Anime.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_Anime.Location = new System.Drawing.Point(141, 115);
+            this.btn_Anime.Name = "btn_Anime";
+            this.btn_Anime.Size = new System.Drawing.Size(86, 34);
+            this.btn_Anime.TabIndex = 2;
+            this.btn_Anime.Text = "Animes";
+            this.btn_Anime.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -73,9 +84,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(380, 317);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_Anime);
+            this.Controls.Add(this.btn_Film);
             this.Controls.Add(this.btn_Musique);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(396, 355);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -87,8 +99,8 @@
         #endregion
 
         private System.Windows.Forms.Button btn_Musique;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_Film;
+        private System.Windows.Forms.Button btn_Anime;
     }
 }
 
