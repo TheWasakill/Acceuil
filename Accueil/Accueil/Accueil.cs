@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Accueil
 {
-    public partial class Form1 : Form
+    public partial class Accueil : Form
     {
-        public Form1()
+        public Accueil()
         {
             InitializeComponent();
+        }
+
+        private void btn_Musique_Click(object sender, EventArgs e)
+        {
+            frm_Musique l_AfficheMusique = new frm_Musique();
+            l_AfficheMusique.Show();
         }
     }
 }

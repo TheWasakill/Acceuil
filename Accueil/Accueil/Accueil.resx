@@ -124,7 +124,7 @@
   <data name="btn_Musique.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALIAAABUCAIAAACp9fqgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAH0bSURBVHhe7f0FeBxJsjYKR3Ezd6tb3ZJazMwMFoMl2ZIs
+        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAH0bSURBVHhe7f0FeBxJsjYKR3Ezd6tb3ZJazMwMFoMl2ZIs
         2TIzM/OYxvbYYxozewxjZmZmxrHH7DGDyGLln9XyzNnv7O45Z/ffvc9zv3viSbdb1d1VWRFvRLyRlZUF
         /+8SimJwI0gaNyApIMnGJhbJKZoFmqIFHDB4Ow0Ex8n0AkLQ2ITACIAUACEEEDTui/jWCILAexQBJQWK
         EwpYIFnLp9mgkgOoATJAESxgjABNlIJIErw4SKAgl2FsSfAnIYABbwbsKdAQwJHA94fvIZAEiEhQkCAB
@@ -661,6 +661,9 @@
         HYxMRxelrSW20Szx/wN7fgvGDJStuQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="btn_Film.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_Film.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZ0AAAB6CAMAAABTN34eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -696,6 +699,9 @@
         gg==
 </value>
   </data>
+  <metadata name="btn_Anime.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

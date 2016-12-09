@@ -1,6 +1,6 @@
 ﻿namespace Accueil
 {
-    partial class Form1
+    partial class Accueil
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
             this.btn_Musique = new System.Windows.Forms.Button();
             this.btn_Film = new System.Windows.Forms.Button();
             this.btn_Anime = new System.Windows.Forms.Button();
@@ -48,6 +48,7 @@
             this.btn_Musique.TabIndex = 0;
             this.btn_Musique.Text = "Musiques";
             this.btn_Musique.UseVisualStyleBackColor = false;
+            this.btn_Musique.Click += new System.EventHandler(this.btn_Musique_Click);
             // 
             // btn_Film
             // 
@@ -76,7 +77,7 @@
             this.btn_Anime.Text = "Animes";
             this.btn_Anime.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,7 +90,8 @@
             this.Controls.Add(this.btn_Musique);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(396, 355);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(396, 355);
+            this.Name = "Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accueil";
             this.ResumeLayout(false);
