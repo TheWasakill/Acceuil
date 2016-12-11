@@ -74,16 +74,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(421, 411);
+            this.ClientSize = new System.Drawing.Size(434, 411);
             this.Controls.Add(this.btn_ChercherMusique);
             this.Controls.Add(this.lbx_Musique);
             this.Controls.Add(this.comboBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(450, 450);
-            this.MinimumSize = new System.Drawing.Size(386, 400);
+            this.MinimumSize = new System.Drawing.Size(450, 450);
             this.Name = "frm_Musique";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_Musique";
+            this.Text = "Musiques";
             this.ResumeLayout(false);
 
         }
