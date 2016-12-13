@@ -52,6 +52,12 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Anime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Anime.Designer.cs">
+      <DependentUpon>frm_Anime.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Film.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Anime.resx">
+      <DependentUpon>frm_Anime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Film.resx">
       <DependentUpon>frm_Film.cs</DependentUpon>

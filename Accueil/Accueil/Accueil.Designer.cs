@@ -63,6 +63,7 @@
             this.btn_Film.TabIndex = 1;
             this.btn_Film.Text = "Films";
             this.btn_Film.UseVisualStyleBackColor = true;
+            this.btn_Film.Click += new System.EventHandler(this.btn_Film_Click);
             // 
             // btn_Anime
             // 
@@ -76,6 +77,7 @@
             this.btn_Anime.TabIndex = 2;
             this.btn_Anime.Text = "Animes";
             this.btn_Anime.UseVisualStyleBackColor = false;
+            this.btn_Anime.Click += new System.EventHandler(this.btn_Anime_Click);
             // 
             // Accueil
             // 
@@ -90,6 +92,7 @@
             this.Controls.Add(this.btn_Musique);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(396, 355);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(396, 355);
             this.Name = "Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

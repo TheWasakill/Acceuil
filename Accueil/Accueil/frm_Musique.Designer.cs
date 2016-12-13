@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Musique));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbx_GenreMusique = new System.Windows.Forms.ComboBox();
             this.lbx_Musique = new System.Windows.Forms.ListBox();
             this.btn_ChercherMusique = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbx_GenreMusique
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbx_GenreMusique.FormattingEnabled = true;
+            this.cbx_GenreMusique.Items.AddRange(new object[] {
             "Rock",
             "Pop",
             "Electro",
             "Heavy Metal",
             "Opening"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cbx_GenreMusique.Location = new System.Drawing.Point(12, 12);
+            this.cbx_GenreMusique.Name = "cbx_GenreMusique";
+            this.cbx_GenreMusique.Size = new System.Drawing.Size(151, 21);
+            this.cbx_GenreMusique.TabIndex = 0;
             // 
             // lbx_Musique
             // 
             this.lbx_Musique.FormattingEnabled = true;
-            this.lbx_Musique.Location = new System.Drawing.Point(198, 12);
+            this.lbx_Musique.Location = new System.Drawing.Point(211, 12);
             this.lbx_Musique.MaximumSize = new System.Drawing.Size(211, 381);
             this.lbx_Musique.MinimumSize = new System.Drawing.Size(211, 381);
             this.lbx_Musique.Name = "lbx_Musique";
@@ -73,13 +73,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(434, 411);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(434, 412);
             this.Controls.Add(this.btn_ChercherMusique);
             this.Controls.Add(this.lbx_Musique);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbx_GenreMusique);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(450, 450);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(450, 450);
             this.Name = "frm_Musique";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -90,7 +91,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbx_GenreMusique;
         private System.Windows.Forms.ListBox lbx_Musique;
         private System.Windows.Forms.Button btn_ChercherMusique;
     }
