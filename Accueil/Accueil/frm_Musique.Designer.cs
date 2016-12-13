@@ -87,6 +87,7 @@
             this.Name = "frm_Musique";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Musiques";
+            this.Load += new System.EventHandler(this.frm_Musique_Load);
             this.ResumeLayout(false);
 
         }

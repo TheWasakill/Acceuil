@@ -16,5 +16,10 @@ namespace Accueil
         {
             InitializeComponent();
         }
+
+        private void frm_Musique_Load(object sender, EventArgs e)
+        {
+            cbx_GenreMusique.Text('Rock')
+        }
     }
 }
