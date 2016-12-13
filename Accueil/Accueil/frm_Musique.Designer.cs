@@ -36,7 +36,9 @@
             // 
             // cbx_GenreMusique
             // 
+            this.cbx_GenreMusique.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_GenreMusique.FormattingEnabled = true;
+            this.cbx_GenreMusique.IntegralHeight = false;
             this.cbx_GenreMusique.Items.AddRange(new object[] {
             "Rock",
             "Pop",

@@ -59,7 +59,9 @@
             // 
             // cbx_Anime
             // 
+            this.cbx_Anime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_Anime.FormattingEnabled = true;
+            this.cbx_Anime.IntegralHeight = false;
             this.cbx_Anime.Items.AddRange(new object[] {
             "Rock",
             "Pop",

@@ -44,6 +44,7 @@
             // 
             // cbx_GenreFilm
             // 
+            this.cbx_GenreFilm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_GenreFilm.FormattingEnabled = true;
             this.cbx_GenreFilm.Items.AddRange(new object[] {
             "Rock",
