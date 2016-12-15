@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Film));
             this.lbx_Film = new System.Windows.Forms.ListBox();
             this.cbx_GenreFilm = new System.Windows.Forms.ComboBox();
-            this.btn_ChercherFilm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbx_Film
@@ -46,26 +45,10 @@
             // 
             this.cbx_GenreFilm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_GenreFilm.FormattingEnabled = true;
-            this.cbx_GenreFilm.Items.AddRange(new object[] {
-            "Rock",
-            "Pop",
-            "Electro",
-            "Heavy Metal",
-            "Opening"});
             this.cbx_GenreFilm.Location = new System.Drawing.Point(12, 12);
             this.cbx_GenreFilm.Name = "cbx_GenreFilm";
             this.cbx_GenreFilm.Size = new System.Drawing.Size(151, 21);
             this.cbx_GenreFilm.TabIndex = 1;
-            // 
-            // btn_ChercherFilm
-            // 
-            this.btn_ChercherFilm.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_ChercherFilm.Location = new System.Drawing.Point(12, 39);
-            this.btn_ChercherFilm.Name = "btn_ChercherFilm";
-            this.btn_ChercherFilm.Size = new System.Drawing.Size(88, 43);
-            this.btn_ChercherFilm.TabIndex = 3;
-            this.btn_ChercherFilm.Text = "Recherche";
-            this.btn_ChercherFilm.UseVisualStyleBackColor = true;
             // 
             // frm_Film
             // 
@@ -74,7 +57,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(434, 412);
-            this.Controls.Add(this.btn_ChercherFilm);
             this.Controls.Add(this.cbx_GenreFilm);
             this.Controls.Add(this.lbx_Film);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -92,6 +74,5 @@
 
         private System.Windows.Forms.ListBox lbx_Film;
         private System.Windows.Forms.ComboBox cbx_GenreFilm;
-        private System.Windows.Forms.Button btn_ChercherFilm;
     }
 }
