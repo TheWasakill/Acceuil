@@ -21,10 +21,5 @@ namespace Accueil
         {
             cbx_GenreMusique.Text = "Rock";
         }
-
-        private void btn_FermerMusique_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
     }
 }

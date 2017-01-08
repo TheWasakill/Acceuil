@@ -56,7 +56,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(434, 412);
+            this.ClientSize = new System.Drawing.Size(434, 411);
             this.Controls.Add(this.cbx_GenreFilm);
             this.Controls.Add(this.lbx_Film);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -65,7 +65,7 @@
             this.MinimumSize = new System.Drawing.Size(450, 450);
             this.Name = "frm_Film";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_Film";
+            this.Text = "Films";
             this.ResumeLayout(false);
 
         }

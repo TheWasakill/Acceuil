@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Musique));
             this.cbx_GenreMusique = new System.Windows.Forms.ComboBox();
             this.lbx_Musique = new System.Windows.Forms.ListBox();
-            this.btn_FermerMusique = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbx_GenreMusique
@@ -60,18 +59,6 @@
             this.lbx_Musique.Size = new System.Drawing.Size(211, 381);
             this.lbx_Musique.TabIndex = 1;
             // 
-            // btn_FermerMusique
-            // 
-            this.btn_FermerMusique.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_FermerMusique.BackgroundImage")));
-            this.btn_FermerMusique.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_FermerMusique.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_FermerMusique.Location = new System.Drawing.Point(12, 351);
-            this.btn_FermerMusique.Name = "btn_FermerMusique";
-            this.btn_FermerMusique.Size = new System.Drawing.Size(43, 42);
-            this.btn_FermerMusique.TabIndex = 2;
-            this.btn_FermerMusique.UseVisualStyleBackColor = true;
-            this.btn_FermerMusique.Click += new System.EventHandler(this.btn_FermerMusique_Click);
-            // 
             // frm_Musique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -79,7 +66,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(434, 411);
-            this.Controls.Add(this.btn_FermerMusique);
             this.Controls.Add(this.lbx_Musique);
             this.Controls.Add(this.cbx_GenreMusique);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -98,6 +84,5 @@
 
         private System.Windows.Forms.ComboBox cbx_GenreMusique;
         private System.Windows.Forms.ListBox lbx_Musique;
-        private System.Windows.Forms.Button btn_FermerMusique;
     }
 }

@@ -71,7 +71,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(434, 412);
+            this.ClientSize = new System.Drawing.Size(434, 411);
             this.Controls.Add(this.pbx_Sharingan);
             this.Controls.Add(this.lbx_Anime);
             this.Controls.Add(this.cbx_Anime);
@@ -82,7 +82,7 @@
             this.MinimumSize = new System.Drawing.Size(450, 450);
             this.Name = "frm_Anime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_Anime";
+            this.Text = "Animes";
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Sharingan)).EndInit();
             this.ResumeLayout(false);
 
