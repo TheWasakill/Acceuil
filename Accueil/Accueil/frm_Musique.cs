@@ -19,7 +19,9 @@ namespace Accueil
 
         private void frm_Musique_Load(object sender, EventArgs e)
         {
-            cbx_GenreMusique.Text = "Rock";
+            lbl_Manga.Opacity
         }
+
+        
     }
 }

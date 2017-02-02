@@ -1,0 +1,47 @@
+body
+{
+	background-color: silver;
+}
+
+header
+{
+	text-align: center;
+	height: 100px;
+	background-color: #66B3FF
+}
+
+h2
+{
+	color: #E4E2E0;
+	font-size: 30px;
+	font-family: Impact;
+	text-decoration: underline;
+}
+
+a
+{
+	font-size: 18px;
+	border: 2px aqua outset;
+	margin-right: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px navy;
+	color: #FFFFFF;
+}
+
+a:visited
+{
+	color: black;
+}
+
+form
+{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.padding-top
+{
+	padding-top: 15px;
+}
