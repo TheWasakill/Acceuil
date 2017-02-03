@@ -19,7 +19,16 @@ namespace Accueil
 
         private void frm_Musique_Load(object sender, EventArgs e)
         {
-            lbl_Manga.Opacity
+            if (cbx_GenreMusique.SelectedIndex == Convert.ToInt32("Opening"))
+            {
+                lbl_Manga.Visible = true;
+                cbx_Manga.Visible = true;
+            }
+            else
+            {
+                lbl_Manga.Visible = false;
+                cbx_Manga.Visible = false;
+            }
         }
 
         
