@@ -21,16 +21,9 @@ namespace Accueil
         {
             if (cbx_GenreMusique.SelectedIndex == Convert.ToInt32("Opening"))
             {
-                lbl_Manga.Visible = true;
-                cbx_Manga.Visible = true;
-            }
-            else
-            {
-                lbl_Manga.Visible = false;
-                cbx_Manga.Visible = false;
+                frm_Anime l_testcbx = new frm_Anime();
+                l_testcbx.Show();
             }
         }
-
-        
     }
 }
