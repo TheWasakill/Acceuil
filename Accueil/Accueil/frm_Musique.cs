@@ -19,10 +19,19 @@ namespace Accueil
 
         private void frm_Musique_Load(object sender, EventArgs e)
         {
+            cbx_GenreMusique.Text = "Rock";
+            VerifOpening();
+        }
+
+        private void VerifOpening()
+        {
             if (cbx_GenreMusique.SelectedIndex == Convert.ToInt32("Opening"))
             {
-                frm_Anime l_testcbx = new frm_Anime();
-                l_testcbx.Show();
+                cbx_Manga.Visible = true;
+            }
+            else
+            {
+                cbx_Manga.Visible = false;
             }
         }
     }
