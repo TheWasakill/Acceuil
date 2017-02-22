@@ -26,8 +26,7 @@ namespace Accueil
         
         private void Oprening_Selected()
         {
-            object Opening = cbx_GenreMusique;
-            if(cbx_GenreMusique.SelectedItem == Opening)
+            if(cbx_GenreMusique.SelectedItem == )
             {
 
             }
