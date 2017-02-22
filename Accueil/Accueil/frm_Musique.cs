@@ -20,18 +20,16 @@ namespace Accueil
         private void frm_Musique_Load(object sender, EventArgs e)
         {
             cbx_GenreMusique.Text = "Rock";
-            VerifOpening();
+            lbl_Manga.Visible = false;
+            cbx_Manga.Visible = false;
         }
-
-        private void VerifOpening()
+        
+        private void Oprening_Selected()
         {
-            if (cbx_GenreMusique.SelectedIndex == Convert.ToInt32("Opening"))
+            object Opening = cbx_GenreMusique;
+            if(cbx_GenreMusique.SelectedItem == Opening)
             {
-                cbx_Manga.Visible = true;
-            }
-            else
-            {
-                cbx_Manga.Visible = false;
+
             }
         }
     }
