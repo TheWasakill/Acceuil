@@ -1,0 +1,27 @@
+body
+{
+	background-color: rgb(181,225,241);
+}
+
+h1
+{
+	text-decoration: underline;
+}
+
+.center
+{
+	text-align: center;
+	display: inline-block;
+
+}
+
+.espaceBouton
+{
+	margin-right: 3%;
+}
+
+.titre
+{
+	font-size: 20px;
+	text-decoration: underline;
+}
