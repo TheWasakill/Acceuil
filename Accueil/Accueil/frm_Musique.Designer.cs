@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Musique));
             this.cbx_GenreMusique = new System.Windows.Forms.ComboBox();
             this.lbx_Musique = new System.Windows.Forms.ListBox();
-            this.lbl_GemreMusique = new System.Windows.Forms.Label();
+            this.lbl_GenreMusique = new System.Windows.Forms.Label();
             this.lbl_Manga = new System.Windows.Forms.Label();
             this.cbx_Manga = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -62,14 +62,14 @@
             this.lbx_Musique.Size = new System.Drawing.Size(211, 381);
             this.lbx_Musique.TabIndex = 1;
             // 
-            // lbl_GemreMusique
+            // lbl_GenreMusique
             // 
-            this.lbl_GemreMusique.AutoSize = true;
-            this.lbl_GemreMusique.Location = new System.Drawing.Point(12, 12);
-            this.lbl_GemreMusique.Name = "lbl_GemreMusique";
-            this.lbl_GemreMusique.Size = new System.Drawing.Size(79, 13);
-            this.lbl_GemreMusique.TabIndex = 2;
-            this.lbl_GemreMusique.Text = "Genre Musique";
+            this.lbl_GenreMusique.AutoSize = true;
+            this.lbl_GenreMusique.Location = new System.Drawing.Point(12, 12);
+            this.lbl_GenreMusique.Name = "lbl_GenreMusique";
+            this.lbl_GenreMusique.Size = new System.Drawing.Size(79, 13);
+            this.lbl_GenreMusique.TabIndex = 2;
+            this.lbl_GenreMusique.Text = "Genre Musique";
             // 
             // lbl_Manga
             // 
@@ -103,7 +103,7 @@
             this.ClientSize = new System.Drawing.Size(434, 412);
             this.Controls.Add(this.cbx_Manga);
             this.Controls.Add(this.lbl_Manga);
-            this.Controls.Add(this.lbl_GemreMusique);
+            this.Controls.Add(this.lbl_GenreMusique);
             this.Controls.Add(this.lbx_Musique);
             this.Controls.Add(this.cbx_GenreMusique);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -123,7 +123,7 @@
 
         private System.Windows.Forms.ComboBox cbx_GenreMusique;
         private System.Windows.Forms.ListBox lbx_Musique;
-        private System.Windows.Forms.Label lbl_GemreMusique;
+        private System.Windows.Forms.Label lbl_GenreMusique;
         private System.Windows.Forms.Label lbl_Manga;
         private System.Windows.Forms.ComboBox cbx_Manga;
     }
