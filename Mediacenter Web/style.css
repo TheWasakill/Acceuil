@@ -3,15 +3,14 @@ body
 	background-color: black;
 }
 
-h1
+.titre
 {
 	font-size: 50px;
 	text-decoration: underline;
 	background-color: #f2f2f2;
-	border:5px #f2f2f2;
 	border-radius: 15px;
 	padding-bottom: 5px;
-	box-shadow: 5px 3px #fafafa;
+	box-shadow: 5px 3px #f4f4f4;
 }
 
 .center
