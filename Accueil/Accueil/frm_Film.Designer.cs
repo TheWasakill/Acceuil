@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Film));
             this.lbx_Film = new System.Windows.Forms.ListBox();
             this.cbx_GenreFilm = new System.Windows.Forms.ComboBox();
+            this.btn_Series = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbx_Film
@@ -50,13 +51,23 @@
             this.cbx_GenreFilm.Size = new System.Drawing.Size(151, 21);
             this.cbx_GenreFilm.TabIndex = 1;
             // 
+            // btn_Series
+            // 
+            this.btn_Series.Location = new System.Drawing.Point(12, 40);
+            this.btn_Series.Name = "btn_Series";
+            this.btn_Series.Size = new System.Drawing.Size(76, 33);
+            this.btn_Series.TabIndex = 2;
+            this.btn_Series.Text = "Séries";
+            this.btn_Series.UseVisualStyleBackColor = true;
+            // 
             // frm_Film
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(434, 411);
+            this.ClientSize = new System.Drawing.Size(434, 412);
+            this.Controls.Add(this.btn_Series);
             this.Controls.Add(this.cbx_GenreFilm);
             this.Controls.Add(this.lbx_Film);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -74,5 +85,6 @@
 
         private System.Windows.Forms.ListBox lbx_Film;
         private System.Windows.Forms.ComboBox cbx_GenreFilm;
+        private System.Windows.Forms.Button btn_Series;
     }
 }
