@@ -24,11 +24,14 @@ namespace Accueil
             cbx_Manga.Visible = false;
         }
         
-        private void Oprening_Selected()
+        private void Opening_Selected()
         {
-            if(cbx_GenreMusique.SelectedItem == )
-            {
+            Object Opening = cbx_GenreMusique.SelectedIndex;
 
+            if (cbx_GenreMusique.SelectedItem == Opening)
+            {
+                lbl_Manga.Visible = true;
+                cbx_Manga.Visible = true;
             }
         }
     }

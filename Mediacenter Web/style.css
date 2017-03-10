@@ -1,9 +1,9 @@
-body
+.FondNoir
 {
 	background-color: black;
 }
 
-.titre
+h1
 {
 	font-size: 50px;
 	text-decoration: underline;
@@ -11,10 +11,17 @@ body
 	border-radius: 15px;
 	padding-bottom: 5px;
 	box-shadow: 5px 3px #f4f4f4;
-}
-
-.center
-{
 	text-align: center;
 }
 
+.arrondie
+{
+	border-radius: 10px;
+	text-align: center;
+}
+
+.FondMusique
+{
+	background-color: red;
+	/*background-image: url(Images/fond_musique.jpg);*/
+}

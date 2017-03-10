@@ -22,11 +22,17 @@ h1
 
 .titre
 {
-	font-size: 20px;
+	font-size: 300%;
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 table, th, td, tr
 {
 	background-color: white;
+}
+
+img
+{
+	position: right;
 }
