@@ -15,9 +15,23 @@ h1
 
 }
 
-.espaceBouton
+.bouton
 {
-	margin-right: 3%;
+	float: left;
+	margin-top: 4.35%;
+	margin-left: 0.75%;
+}
+
+.menu_deroulant
+{
+	position: absolute;
+	z-index: 1000;
+	max-height: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 p.titre
@@ -26,23 +40,33 @@ p.titre
 	text-decoration: underline;
 	font-weight: bold;
 	padding-top: 4.5%;
-	padding-right: 1%;
+	padding-right: 5%;
 	color: #b5e1f1;
+	width: 40%;
 }
 
-table, th, td, tr
+a, a:hover, a:visited
+{
+	color: #b5e1f1;
+	padding-top: 4.5%;
+	padding-right: 1%;
+}
+
+table, tr, th, td
 {
 	/*table taille 98%*/
 	background-color: white;
 	margin-left: 1%;
+	text-align: center;
 }
 th
 {
-	width: 8%;
+	width: 5%;
+	background-color: rgb(231, 227, 183);
 }
 .JC
 {
-	width: 16.85%;
+	width: 19%;
 }
 
 /*img
@@ -56,6 +80,8 @@ th
 {
 	background-image: url(Images/bandeau2.png);
 	height: 150px;
+	margin-top: 0.75%;
+	margin-bottom: 0.5%;
 }
 
 div.gauche
@@ -63,15 +89,8 @@ div.gauche
 	text-align: left;
 	width: 49%;
 	float: left;
-	border: 1px solid black;
 	margin-left: 0.5%;
 	margin-top: 1%;
-}
-
-.txtarea
-{
-	width: 100%;
-	resize: none;
 }
 
 div.droite
@@ -79,7 +98,6 @@ div.droite
 	text-align: right;
 	width: 49%;
 	float: right;
-	border: 1px solid black;
 	margin-right: 0.5%;
 	margin-top: 1%;
 }
@@ -95,4 +113,69 @@ div.droite
 	padding-top: 3px;
 	font-weight: bold;
 	font-size: 125%;
+}
+
+.border
+{
+	margin-left: 1%;
+}
+
+select
+{
+	width: 100%;
+}
+
+
+.menu {
+  padding:0;
+  margin-left: 1.5%;
+  list-style:none;
+  text-align: center;
+  width: 5%;
+}
+.menu ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+.menu li {
+   background-color: rgb(181, 225, 241);
+   border-radius: 6px;
+   margin-bottom:2px;
+}
+.menu li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all 1s;
+   border-radius:0;
+   background: white;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+.menu a {
+  display:block;
+  text-decoration: none;
+  color: black;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:1.2em;
+}
+.menu ul li a, .menu li:hover li a {
+  font-size:1em;
+  text-decoration: none;
+}
+.menu li:hover {
+   background: rgb(181, 225, 241);
+}
+.menu li li:hover {
+   background: white;
+}
+.menu ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+.menu li:hover li {
+  max-height: 15em;
 }
