@@ -13,15 +13,15 @@
 			<ul>
 				<li><a href="#">Menu</a>
 					<ul>
-						<li><a href="index.html">Accueil</a></li>
-						<li><a href="emprunt.html">Emprunt</a></li>
+						<li><a href="index.php">Accueil</a></li>
+						<li><a href="emprunt.php">Emprunt</a></li>
 						<li><a href="#">Retour</a></li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 		
-		<div class="bandeau"><center><p class="titre">Gestion du Matériel Informatique </p></center></div>
+		<div class="bandeau"><center><p class="titre">Gestion du Matériel Numérique </p></center></div>
 		
 		<div class="gauche">
 			<table border="1" class="table table-responsive">
@@ -31,12 +31,6 @@
 				<tr>
 					<td>
 						<select size="47">
-							<option></option>
-							<option></option>
-							<option></option>
-							<option></option>
-							<option></option>
-							<option></option>
 							<option></option>
 						</select>
 					</td>
@@ -52,12 +46,6 @@
 				<tr>
 					<td>
 						<select size="47">
-							<option></option>
-							<option></option>
-							<option></option>
-							<option></option>
-							<option></option>
-							<option></option>
 							<option></option>
 						</select>
 					</td>
