@@ -15,7 +15,7 @@
 					<ul>
 						<li><a href="index.php">Accueil</a></li>
 						<li><a href="liste.php">Matériel</a></li>
-						<li><a href="#">Retour</a></li>
+						<li><a href="retour.php">Retour</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -28,15 +28,7 @@
 		</div>
 		
 		<?php
-			
-			try
-			{
-				$bdd = new PDO('mysql:host=localhost;dbname=appgestion;charset=utf8', 'root', '');
-			}
-			catch(Exception $e)
-			{
-				die('Problème ;)' . $e->getMessage());
-			}
+			include('connexionBDD.php');
 			
 			$reponse = $bdd->query('SELECT * FROM formateurs  ORDER BY `formateurs`.`ID` ASC');
 		?>	
@@ -44,10 +36,10 @@
 		<form action="#" method="post">
 			<div class="Formateurs">
 				<?php
-					echo '<select size="18" class="Liste_Formateurs">';
+					echo '<select size="18" class="Liste_Formateurs border">';
 					while ($donnees = $reponse->fetch())
 					{
-						echo '<option>' . $donnees['Nom'] . '</option>' ;
+						echo '<option ONCLICK="SelectionEmprunt.php">' . $donnees['Nom'] . '</option>' ;
 					}
 					echo '</select>';
 				?>
@@ -55,27 +47,36 @@
 			
 			<div class="Materiel">
 				<?php
-					$reponse = $bdd->query('SELECT * FROM `materiel` WHERE `ID`<13');
+					$reponse = $bdd->query('SELECT * FROM `materiel_libre` WHERE `ID`<13');
 					
 					echo '<div>';
 					while ($donnees = $reponse->fetch())
 					{
-						echo '<input type=checkbox />' . '  ' . $donnees['Modele'] . '<br/>' ;
+						echo '<label><input ONCLICK="SelectionEmprunt.php" type=checkbox />' . '  ' . $donnees['Modele'] . '</label><br/>' ;
 					}
 					echo '</div>';
 					
-					$reponse = $bdd->query('SELECT * FROM `materiel` WHERE `ID`>12 AND `ID`<25');
+					$reponse = $bdd->query('SELECT * FROM `materiel_libre` WHERE `ID`>12 AND `ID`<25');
 					
 					echo '<div>';
 					while ($donnees = $reponse->fetch())
 					{
-						echo '<input type=checkbox />' . '  ' . $donnees['Modele'] . '<br/>' ;
+						echo '<label><input ONCLICK="SelectionEmprunt.php" type=checkbox />' . '  ' . $donnees['Modele'] . '</label><br/>' ;
 					}
 					echo '</div>';
 					$pdo = null;
 				?>
 			</div>
-		</form>
+			
+			<label class="date">Date d'Emprunt: <br/>
+				<input type="" class="Selec_Date"/>
+			</label>
+			
+			<label class="date"> Date Retour: <br/>
+				<input type="" class="Selec_Date"/>
+			</label>
+		
 			<div class="BtnEmprunter"><input type="submit" value="Emprunter" class="btn btn-primary"/></div>
+		</form>
 	</body>
 </html>

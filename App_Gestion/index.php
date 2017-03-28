@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,8 +12,8 @@
 	</head>
 	
 	<body>
-		<!-- <img src="Images/bandeau2.png" alt="bandeau académie" /> -->
 		<div class="bandeau"><center><p class="titre">Gestion du Matériel Numérique</p></center></div>
+		
 		<table border="1" class="table table-responsive">
 			<tr>
 				<th>Formateurs</th>
@@ -267,7 +268,7 @@
 			<center>
 				<a href="liste.php" ><input type="button" value="Liste du matériel" alt="Liste du matériel" class="btn btn-primary espaceBouton" /></a>
 				<a href="emprunt.php" ><input type="button" value="Demande d'emprunt" alt="Demande d'emprunt" class="btn btn-primary espaceBouton" /></a>
-				<input type="button" value="Retour du matériel" alt="Retour du matériel" class="btn btn-primary" />
+				<a href="retour.php" ><input type="button" value="Retour du matériel" alt="Retour du matériel" class="btn btn-primary" /></a>
 			</center>
 		</footer>
 		<br/>

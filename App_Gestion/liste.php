@@ -15,7 +15,7 @@
 					<ul>
 						<li><a href="index.php">Accueil</a></li>
 						<li><a href="emprunt.php">Emprunt</a></li>
-						<li><a href="#">Retour</a></li>
+						<li><a href="retour.php">Retour</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -30,9 +30,20 @@
 				</tr>
 				<tr>
 					<td>
-						<select size="47">
-							<option></option>
-						</select>
+				<?php
+					include('connexionBDD.php');
+					
+					$reponse = $bdd->query('SELECT * FROM materiel_libre');
+					
+					echo '<select size="24" class="select">';
+					while ($donnees = $reponse->fetch())
+					{
+						echo '<option>' . $donnees['Modele'] . '</option>' ;
+					}
+					echo '</select>';
+					
+					$pdo = null;
+				?>
 					</td>
 				</tr>
 			</table>
@@ -45,9 +56,20 @@
 				</tr>
 				<tr>
 					<td>
-						<select size="47">
-							<option></option>
-						</select>
+						<?php
+							include('connexionBDD.php');
+							
+							$reponse = $bdd->query('SELECT * FROM materiel_pris');
+							
+							echo '<select size="24" class="select">';
+							while ($donnees = $reponse->fetch())
+							{
+								echo '<option>' . $donnees['Modele'] . '</option>' ;
+							}
+							echo '</select>';
+							
+							$pdo = null;
+						?>
 					</td>
 				</tr>
 			</table>
