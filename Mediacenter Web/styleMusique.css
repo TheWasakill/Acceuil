@@ -1,6 +1,8 @@
-div
+.fullscreen
 {
-	background-image: url(Images/fond_musique.jpeg);
+	width: 100%;
+	height: 530px;
+	display: block;
 }
 
 h1

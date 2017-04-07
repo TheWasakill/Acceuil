@@ -1,9 +1,4 @@
-.FondNoir
-{
-	background-color: black;
-}
-
-h1
+.h1
 {
 	font-size: 50px;
 	text-decoration: underline;
@@ -20,8 +15,3 @@ h1
 	text-align: center;
 }
 
-.FondMusique
-{
-	background-color: red;
-	/*background-image: url(Images/fond_musique.jpg);*/
-}
